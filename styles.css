@@ -1,0 +1,219 @@
+/* Reset General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Menú de Navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    z-index: 100;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: yellow;
+}
+
+/* Cabecera */
+.header {
+    background: url('img/pexels-kubrakuzu-29013307.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 8px;
+}
+.overlay h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 10px;
+}
+.overlay p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.btn-whatsapp:hover {
+    background-color: #20b85a;
+}
+
+/* Sección: Reseña */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+.reseña h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.reseña p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Sección: Servicios */
+.servicios h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card h3 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: #333;
+}
+.card p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 10px 20px;
+}
+
+/* Sección: Equipo */
+.equipo h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.equipo .cards-container {
+    justify-content: center;
+}
+.equipo .card {
+    width: 25%;
+}
+.equipo .card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+.equipo .card h3 {
+    font-size: 20px;
+    color: #333;
+}
+.equipo .card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    flex-wrap: wrap;
+}
+.footer-col {
+    width: 45%;
+    margin-bottom: 15px;
+}
+.footer-col h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.footer a {
+    color: yellow;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    z-index: 100;
+}
+.whatsapp-float img {
+    width: 100%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .equipo .card {
+        width: 80%;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+}
